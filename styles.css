@@ -21,7 +21,7 @@ h3 {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-size: 18px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -57,6 +57,8 @@ body {
   margin-bottom: 40px;
   max-width: 750px;
   text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .button-request {
@@ -113,8 +115,6 @@ body {
   padding-right: 16px;
   width: 400px;
 
-
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,7 +159,6 @@ body {
 }
 
 .customers__buttons {
-
   display: flex;
   column-gap: 16px;
   justify-content: center;
@@ -210,7 +209,6 @@ body {
   background-color: white;
 
   display: none;
-
 }
 
 .customers__card_active {
@@ -276,10 +274,11 @@ body {
   }
 
   .customers__cards {
-    max-width: 750px;   
+    max-width: 750px;
   }
 
-  .customers__card {    
+  .customers__card {
+    gap: 10px;
     top: 80px;
     max-width: 750px;
   }
@@ -291,6 +290,7 @@ body {
   .customers-card__img {
     width: 304px;
     height: 202px;
+    align-self: center;
   }
 
   .frame-big {
@@ -309,105 +309,101 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  body {
+    font-size: 16px;
+  }
 
-    body {
-        font-size: 16px;
-    }
+  .main-description__title,
+  .solution__title,
+  .customers__title {
+    font-size: 30px;
+  }
 
-    .main-description__title, 
-    .solution__title, 
-    .customers__title {
-        font-size: 30px;
-    }
+  .customers {
+    padding-top: 20px;
+  }
 
-    .customers {
-        padding-top: 20px;
-    }
+  .customers__buttons {
+    column-gap: 5px;
+  }
 
-    .customers__buttons {
-        column-gap: 5px;
-    }
+  .solution {
+    max-width: 375px;
+  }
 
+  .solution-card {
+    max-width: 360px;
+    height: 300px;
+  }
 
-    .solution {
-        max-width: 375px;
-    }
+  .solution-card__title {
+    font-size: 30px;
+  }
 
-    .solution-card {
-        max-width: 360px;
-        height: 300px;
-    }
+  .solution__text {
+    margin-bottom: 30px;
+  }
 
-    .solution-card__title {
-        font-size: 30px;
-    }
+  .solution-card__img {
+    width: 220px;
+    height: 147px;
+  }
 
-    .solution__text {
-        margin-bottom: 30px;
-    }
+  .customers__cards {
+    max-width: 400px;
+  }
 
+  .customers__card {
+    top: 80px;
+    max-width: 320px;
+  }
 
-    .solution-card__img {
-        width: 220px;
-        height: 147px;
-    }
+  .customers__card_text {
+    line-height: 100%;
+  }
 
-    
-    
-    .customers__cards {
-        max-width: 400px;
-        
-    }
-    
-    .customers__card {    
-        top: 80px;
-        max-width: 320px;
-       
-    }
+  .customers__card_title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 
-    .customers__card_text {
-       
-        line-height: 100%;
-    }
-    
-    .customers__card_title {
-        font-size: 20px;
-    }
-    
-    .customers-card__img {
-        width: 190px;
-        height: 127px;
-    }
-    
-    .frame-big {
-        width: 300px;
-        top: 140px;
-    }
-    
-    .frame-small {
-        width: 280px;
-        top: 190px;
-    }
-    
-    .customers__text {
-        max-width: 360px;
-        margin-bottom: 20px;
-    }
+  .customers__card_organization-list {
+    margin-bottom: 10px;
+  }
 
-    .customers__buttons_organization,
-    .customers__buttons_employees,
-    .customers__buttons_travelers {
-        padding-top: 5px;
-        padding-left: 10px;
-        padding-bottom: 5px;
-        padding-right: 10px;       
-    }
+  .customers-card__img {
+    width: 190px;
+    height: 127px;
+  }
 
-    .customers__card_active {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .frame-big {
+    width: 300px;
+    top: 140px;
+  }
+
+  .frame-small {
+    width: 280px;
+    top: 190px;
+  }
+
+  .customers__text {
+    max-width: 360px;
+    margin-bottom: 20px;
+  }
+
+  .customers__buttons_organization,
+  .customers__buttons_employees,
+  .customers__buttons_travelers {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+  }
+
+  .customers__card_active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
-
-
