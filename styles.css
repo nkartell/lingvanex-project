@@ -253,6 +253,10 @@ body {
   line-height: 25.2px;
 }
 
+.customers-card {
+  list-style-position: inside;
+}
+
 /* frame */
 
 .frame {
@@ -408,15 +412,14 @@ body {
 
   .customers__buttons {
     column-gap: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .customers-card__text {
     line-height: 20px;
   }
 
-  .customers-card_organization-list {
-    list-style-position: inside;
-  }
 
   .solution {
     max-width: 375px;
