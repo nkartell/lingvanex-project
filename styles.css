@@ -25,6 +25,7 @@ ul {
   padding-left: 0;
 }
 
+
 body {
   margin: 0 auto;
   font-size: 18px;
@@ -411,6 +412,10 @@ body {
 
   .customers-card__text {
     line-height: 20px;
+  }
+
+  .customers-card_organization-list {
+    list-style-position: inside;
   }
 
   .solution {
