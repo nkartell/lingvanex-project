@@ -16,7 +16,11 @@ h3 {
   margin: 0;
 }
 
- ul {
+p {
+  color: #2A2B2F;
+}
+
+ul {
   margin-left: 0;
   padding-left: 0;
 }
@@ -46,11 +50,13 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 1059px;
+  margin-bottom: 54px;
 }
 
 .main-description__title {
   font-size: 70px;
   margin-bottom: 24px;
+  font-weight: 900;
 }
 
 .main-description__text {
@@ -60,7 +66,7 @@ body {
   text-align: center;
   padding-left: 8px;
   padding-right: 8px;
-  letter-spacing: 1px;
+  
   line-height: 25.2px;
 }
 
@@ -89,14 +95,14 @@ body {
   font-size: 60px;
   max-width: 681px;
   margin-bottom: 24px;
+  font-weight: 900;
 }
 
 .solution__text {
-  max-width: 790px;
+  max-width: 750px;
   margin-top: 0;
   margin-bottom: 70px;
   text-align: center;
-  letter-spacing: 1px;
   line-height: 25.2px;
 }
 
@@ -129,6 +135,7 @@ body {
   font-size: 34px;
   text-align: center;
   margin-bottom: 12px;
+  font-weight: 900;
 }
 
 .solution-card__text {
@@ -145,7 +152,7 @@ body {
 .customers {
   display: flex;
   flex-direction: column;
-  padding-top: 70px;
+  padding-top: 150px;
   align-items: center;
 }
 
@@ -154,14 +161,15 @@ body {
   text-align: center;
   font-size: 60px;
   margin-bottom: 32px;
+  font-weight: 900;
 }
 
 .customers__text {
-  width: 850px;
+  max-width: 810px;
   text-align: center;
   margin-bottom: 64px;
   line-height: 20px;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
   line-height: 25.2px;
 }
 
@@ -181,6 +189,8 @@ body {
   padding-right: 32px;
   border-radius: 10px;
   background-color: #f4f6fd;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .customers__buttons_active {
@@ -227,6 +237,7 @@ body {
 .customers-card__title {
   grid-area: cardTitle;
   font-size: 60px;
+  font-weight: 900;
 }
 
 .customers-card_organization-list {
@@ -289,19 +300,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  max-width: 296px;
-  
+  max-width: 295px; 
 }
 
 .help__title {
   font-size: 60px;
   margin-bottom: 70px;
+  font-weight: 900; 
 }
 
 .help__item-title {
   font-size: 34px;
   margin-bottom: 14px;
   letter-spacing:-0.5px;
+  font-weight: 900;
+  
 }
 
 .help__item-text {
@@ -323,10 +336,11 @@ body {
   row-gap: 56px;
 }
 
-.help__item-img {
-  margin-bottom: 24px;
-}
 
+
+.help__item-img {
+  margin-bottom: 14px;
+}
 
 
 
@@ -489,7 +503,7 @@ body {
     font-size: 30px;
     padding-left: 8px;
     padding-right: 8px;
-    font-weight: bold;
+    
   }
 
   .help__item-title {
